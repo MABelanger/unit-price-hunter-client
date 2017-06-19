@@ -12,6 +12,7 @@ module.exports = {
   output: { path: __dirname, filename: 'dist/bundle.js' },
   module: {
     loaders: [
+      { test: /\.(html)$/, loader: "file-loader?name=dist/[name].[ext]" },
       { test: /.jsx?$/, loader: 'babel-loader', exclude: /node_modules/, query: { presets: ['es2015', 'react'] } },
       { test: /\.scss$/, use: [ "style-loader", "css-loader?sourceMap", "sass-loader?sourceMap" ] },
       { test: /\.css$/, use: [ 'style-loader', 'css-loader?sourceMap' ] },
