@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "dev": "node node_modules/babel-cli/bin/babel-node.js node_modules/webpack-dev-server/bin/webpack-dev-server.js --progress --colors",
-    "build" : "node_modules/webpack/bin/webpack.js --config webpack.config.production.js -p",
+    "build": "node_modules/webpack/bin/webpack.js --config webpack.config.production.js -p",
     "upgrade:prod": "npm install --save bootstrap react react-dom",
     "upgrade:dev": "npm install --save-dev babel-cli babel-core babel-loader babel-preset-es2015 babel-preset-react css-loader file-loader node-sass sass-loader style-loader url-loader webpack webpack-dev-server",
     "upgrade:all": "npm run upgrade:prod && npm run upgrade:dev"
